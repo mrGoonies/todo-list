@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A simple HTML document">
+    <meta name="keywords" content="HTML, Document, Example">
+    <meta name="author" content="mrGoonies">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="icon" href="./public/to-do-list.ico" type="image/x-icon">
+    <title>ToDo List app</title>
+</head>
+<body>
+    <div class="app">
+        <h1>To Do List</h1>
+        <hr>
+        <p>Nueva Tarea</p>
+        <input type="text" id="taskInput" placeholder="Escribe una tarea...">
+        <button id="addTaskButton">Añadir Tarea</button>
+        <div class="info">
+            <div class="info-left">
+                <p>Total: <span id="total-tareas"></span></p>
+                <p>Realizadas: <span id="total-realizadas"></span></p>
+            </div>
+            <div class="info-right">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tarea</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskList">
+                        <!-- Las tareas se añadirán aquí dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
